@@ -1,0 +1,75 @@
+/* STYLE NAVBAR */
+
+.topnav {
+
+  overflow: hidden;
+
+  background-color: teal;
+
+  margin-top: 0px;
+
+  height: 30px;
+
+}
+
+.topnav a {
+
+  float: left;
+
+  display: block;
+
+  color: #f2f2f2;
+
+  text-align: center;
+
+  padding: 10px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+}
+
+.topnav a:hover {
+
+  background-color: #ddd;
+
+  color: black;
+
+}
+
+.topnav a.active {
+
+  background-color: #04AA6D;
+
+  color: white;
+
+}
+
+.topnav .mytopicon {
+
+  display: flex;
+
+  float: right;
+
+  text-align: right;
+
+}
+
+@media screen and (max-width: 760px) {
+
+.mytopnav  {
+
+  display: none;
+
+}
+
+.mytopicon {
+
+  text-align: center;
+
+  margin-right: 119px;
+
+}
+
+}
