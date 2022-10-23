@@ -20,5 +20,5 @@ let database = [
 let dataArtikel = database
 for (var i = 0; i < dataArtikel.length; i++) {
   var obj = dataArtikel[i]
-  document.getElementById("docHtml" + i).setAttribute("href", domain + database[i].data.postOn + database[i].data.link,);
+  document.getElementById("doc" + i).setAttribute("href", domain + database[i].data.postOn + database[i].data.link,);
 }
