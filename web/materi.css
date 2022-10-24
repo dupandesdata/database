@@ -1,0 +1,22 @@
+.materi p {
+         font-family: arial;
+         margin-top: 0.7em;
+         font-size: 11pt;
+        }
+        blockquote {
+        background:#343434;
+        color:#fff;
+        margin:20px 10px;
+        padding:2px;
+        }
+        blockquote p:not(:first-child) {
+         margin: 2px;
+         font-size: 9pt;
+         font-family: monospace;
+        }
+        blockquote p:first-child {
+         background: rgb(55, 24, 230);
+         margin: -2px;
+         padding: 5px; 
+         border-bottom: 1px solid #ddd;
+        }
