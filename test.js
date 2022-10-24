@@ -1,1 +1,1 @@
-document.getElementById("q").innerHTML = "jika kita"
+document.querySelector(".containerTop").innerHTML = "Catatan Pembelajaran Saya";
