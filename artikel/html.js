@@ -12,7 +12,7 @@ let databaseHtml = [
       id: "html1",
       artikel: "Apa Itu Internet",
       link: "html1.html",
-      folder: "materi-"
+      folder: "materi/"
     }
   },
   {
