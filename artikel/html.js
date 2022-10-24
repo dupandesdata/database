@@ -11,8 +11,8 @@ let databaseHtml = [
     data: {
       id: "html1",
       artikel: "Apa Itu Internet",
-      link: "apa-itu-internet.html",
-      folder: "1-html/1-"
+      link: "html1.html",
+      folder: "materi-"
     }
   },
   {
