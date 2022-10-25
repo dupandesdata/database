@@ -1,24 +1,42 @@
-let domain = "https://www.dupancode.my.id/"
+import databaseHtml from "https://dupandesdata.github.io/database/artikel.js";
+import {domain} from "https://dupandesdata.github.io/database/artikel.js";
+// variabel
+let materiHtml = document.getElementById("html0")
+let materiCss = document.getElementById("css0")
+let materiJs = document.getElementById("js0")
+let artikelHtml = "";
+let artikelCss = "";
 
-let database = [
-  {
-    data: {
-      artikel: "Apa Itu Internet",
-      link: "apa-itu-internet.html",
-      postOn: "2020/01/"
-    }
-  },
-  {
-    data: {
-      artikel: "Domain dan DNS Server",
-      link: 'val2'
-    }
+// buat artikel 
+// buat link artikel 
+for (let i = 1; i < databaseCss.length; i++) {
+  artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>"+ "<br>";
+      }
+for (let i = 1; i < databaseHtml.length; i++) {
+  artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>"+ "<br>";
+}
+
+const body = document.body;
+body.onload = myFunction;
+
+function myFunction() {
+  if (materiHtml !== null) {
+
+document.getElementById("html0").innerHTML = artikelHtml;
+    for (var i = 1; i < databaseHtml.length; i++) {
+  document.getElementById("html" + i).setAttribute("href", domain +  databaseHtml[i].data.folder+  databaseHtml[i].data.link,);
+};
+    
   }
-];
+  else if (materiHtml === null && materiCss !== null) {
 
+document.getElementById("css0").innerHTML = artikelCss;
+for (var i = 1; i < databaseCss.length; i++) {
+  document.getElementById("css" + i).setAttribute("href", domain +  databaseCss[i].data.folder+  databaseCss[i].data.link,);
+};
 
-let dataArtikel = database
-for (var i = 0; i < dataArtikel.length; i++) {
-  var obj = dataArtikel[i]
-  document.getElementById("doc" + i).setAttribute("href", domain + database[i].data.postOn + database[i].data.link,);
+  }
+  else if (materiCss === null && materiCss === null && materiJs !== null) {
+    console.log("js ada")
+  }
 }
