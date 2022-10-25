@@ -1,5 +1,5 @@
 export let domain = "https://masdupan.com/"
-let databaseHtml = [
+export let databaseHtml = [
   {
     data: {
       id: "html0",
@@ -33,7 +33,7 @@ let databaseHtml = [
   }
 ];
 
-let databaseCss = [
+export let databaseCss = [
   {
     data: {
       id: "css0",
@@ -66,5 +66,3 @@ let databaseCss = [
     }
   }
 ];
-export default databaseHtml;
-export default databaseCss;
