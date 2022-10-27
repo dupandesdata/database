@@ -19,10 +19,6 @@ ol, ul, li {
 button {
   border: none;
 }
-#html0, #css0, #js0 {
-  display: none;
-  margin-left: 2px;
-}
 
 /* Starting Style */
 .myHeader {
