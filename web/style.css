@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 /* CSS Reset */
 * {
+  font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,16 +13,18 @@ a {
 ol, ul, li {
   list-style: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-* {
-  font-family: 'Inter', sans-serif;
-}
 .mt-1 {
   margin-top: 5px;
 }
 button {
   border: none;
 }
+#html0, #css0, #js0 {
+  display: none;
+  margin-left: 2px;
+}
+
+/* Starting Style */
 .myHeader {
   display: flex;
   justify-content: space-between;
@@ -58,6 +63,7 @@ button {
   border-radius: 9px;
 }
 .sidebar {
+  width: 191px;
   display: flex;
   flex-direction: column;
 }
@@ -88,6 +94,7 @@ button {
   display: none;
 }
 }
+
 /* Mobile Version */
 @media only screen and (max-width: 700px) {
 .pc {
