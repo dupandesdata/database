@@ -110,20 +110,18 @@ let artikelHtml = "";
 let artikelCss = "";
 let artikelJs = "";
 
-let artikelHtml = "";
 // buat artikel
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>" + "<br>";
-}
+};
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
-}
+};
 for (let i = 1; i < databaseJs.length; i++) {
   artikelJs += "<a id='" + databaseJs[i].data.id + "'>" + databaseJs[i].data.artikel + "</a>" + "<br>";
-}
+};
 
 // buat link artikel
-
 const body = document.body;
 body.onload = myFunction;
 function myFunction() {
@@ -153,9 +151,10 @@ button.onclick = function (myTap) {
     materiCss.style.display = "block";
     materiHtml.style.display = "none";
     materiJs.style.display = "none";
-  } else if (target.id === "btn-css") {
+  } else if (target.id === "btn-js") {
     materiJs.style.display = "block";
     materiHtml.style.display = "none";
     materiCss.style.display = "none";
   }
 };
+ 
