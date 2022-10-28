@@ -126,7 +126,7 @@ for (let i = 1; i < databaseJs.length; i++) {
 const body = document.body;
 body.onload = myFunction;
 function myFunction() {
-  if (materiHtml !== null && materiCss !== null) {
+  if (materiHtml !== null && materiCss !== null && materiJs !== null) {
     materiHtml.innerHTML = artikelHtml;
     materiCss.innerHTML = artikelCss;
     materiJs.innerHTML = artikelJs;
