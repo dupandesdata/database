@@ -66,7 +66,42 @@ let databaseCss = [
       folder: "materi/"
     }
   }
-]
+];
+
+let databaseJs = [
+  {
+    data: {
+      id: "js0",
+      artikel: "",
+      link: "",
+    }
+  },
+  {
+    data: {
+      id: "js1",
+      artikel: "Sejarah dan Perkembangan JavaScript",
+      link: "javascript1.html",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "js2",
+      artikel: "Type data JavaScript",
+      link: "javascript2.html",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "js3",
+      artikel: " JavaScript Type Number",
+      link: "javascript3.html",
+      folder: "materi/-"
+    }
+  }
+];
+
 // variabel
 let materiHtml = document.getElementById("html0");
 let materiCss = document.getElementById("css0");
