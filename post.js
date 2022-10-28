@@ -108,6 +108,7 @@ let materiCss = document.getElementById("css0");
 let materiJs = document.getElementById("js0");
 let artikelHtml = "";
 let artikelCss = "";
+let artikelJs = "";
 
 // buat artikel
 for (let i = 1; i < databaseCss.length; i++) {
@@ -116,22 +117,28 @@ for (let i = 1; i < databaseCss.length; i++) {
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
 }
+for (let i = 1; i < databaseJs.length; i++) {
+  artikelJs += "<a id='" + databaseJs[i].data.id + "'>" + databaseJs[i].data.artikel + "</a>" + "<br>";
+}
 
 // buat link artikel
 const body = document.body;
 body.onload = myFunction;
 function myFunction() {
   if (materiHtml !== null) {
-    document.getElementById("html0").innerHTML = artikelHtml;
+    materiHtml.innerHTML = artikelHtml;
     for (var i = 1; i < databaseHtml.length; i++) {
       document.getElementById("html" + i).setAttribute("href", domain + databaseHtml[i].data.folder + databaseHtml[i].data.link);
     }
   } else if (materiHtml === null && materiCss !== null) {
-    document.getElementById("css0").innerHTML = artikelCss;
+    materiCss.innerHTML = artikelCss;
     for (var i = 1; i < databaseCss.length; i++) {
       document.getElementById("css" + i).setAttribute("href", domain + databaseCss[i].data.folder + databaseCss[i].data.link);
     }
   } else if (materiCss === null && materiCss === null && materiJs !== null) {
-    console.log("js ada");
+    materiJs.innerHTML = artikelJs;
+    for (var i = 1; i < databaseJs.length; i++) {
+      document.getElementById("js" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.link);
+    }
   }
 }
