@@ -27,7 +27,7 @@ let databaseHtml = [
   {
     data: {
       id: "html3",
-      artikel: "Pengenalan Web Hosting",
+      artikel: "Web Hosting",
       link: "html3.html",
       folder: "materi/"
     }
@@ -45,7 +45,7 @@ let databaseCss = [
   {
     data: {
       id: "css1",
-      artikel: "Pengertian Struktur Dasar",
+      artikel: "Struktur CSS Dasar",
       link: "css1.html",
       folder: "materi/"
     }
@@ -53,7 +53,7 @@ let databaseCss = [
   {
     data: {
       id: "css2",
-      artikel: "Pengertian Selector Dasar",
+      artikel: "Selector CSS",
       link: "css2.html",
       folder: "materi/"
     }
@@ -61,7 +61,7 @@ let databaseCss = [
   {
     data: {
       id: "css3",
-      artikel: "mengenal Property dan Value",
+      artikel: "Property dan Value",
       link: "css3.html",
       folder: "materi/"
     }
