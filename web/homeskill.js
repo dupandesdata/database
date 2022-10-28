@@ -107,19 +107,20 @@ let materiHtml = document.getElementById("html0");
 let materiCss = document.getElementById("css0");
 let materiJs = document.getElementById("js0");
 let artikelHtml = "";
+let artikelCss = "";
 let artikelJs = "";
 
 let artikelHtml = "";
 // buat artikel
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>" + "<br>";
-};
+}
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
-};
+}
 for (let i = 1; i < databaseJs.length; i++) {
-  artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
-};
+  artikelJs += "<a id='" + databaseJs[i].data.id + "'>" + databaseJs[i].data.artikel + "</a>" + "<br>";
+}
 
 // buat link artikel
 
