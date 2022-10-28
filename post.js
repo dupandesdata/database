@@ -1,4 +1,4 @@
-let domain = "https://masdupan.com/"
+let domain = "https://dupancode.my.id/"
 
 let databaseHtml = [
   {
@@ -20,7 +20,7 @@ let databaseHtml = [
     data: {
       id: "html2",
       artikel: "Domain dan DNS Server",
-      link: "domain-dan-dns-server.html",
+      link: "html2.html",
       folder: "materi/"
     }
   },
@@ -28,7 +28,7 @@ let databaseHtml = [
     data: {
       id: "html3",
       artikel: "Pengenalan Web Hosting",
-      link: "pengenalan-web-hosting.html",
+      link: "html3.html",
       folder: "materi/"
     }
   }
@@ -46,7 +46,7 @@ let databaseCss = [
     data: {
       id: "css1",
       artikel: "Pengertian Struktur Dasar",
-      link: "pengertian-struktur-dasar.html",
+      link: "css1.html",
       folder: "materi/"
     }
   },
@@ -54,7 +54,7 @@ let databaseCss = [
     data: {
       id: "css2",
       artikel: "Pengertian Selector Dasar",
-      link: "pengertian-selector-dasar.html",
+      link: "css2.html",
       folder: "materi/"
     }
   },
@@ -62,7 +62,7 @@ let databaseCss = [
     data: {
       id: "css3",
       artikel: "mengenal Property dan Value",
-      link: "mengenal-property-dan-value.html",
+      link: "css3.html",
       folder: "materi/"
     }
   }
