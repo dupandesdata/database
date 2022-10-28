@@ -107,15 +107,19 @@ let materiHtml = document.getElementById("html0");
 let materiCss = document.getElementById("css0");
 let materiJs = document.getElementById("js0");
 let artikelHtml = "";
-let artikelCss = "";
+let artikelJs = "";
 
+let artikelHtml = "";
 // buat artikel
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>" + "<br>";
-}
+};
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
-}
+};
+for (let i = 1; i < databaseJs.length; i++) {
+  artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
+};
 
 // buat link artikel
 
@@ -125,11 +129,15 @@ function myFunction() {
   if (materiHtml !== null && materiCss !== null) {
     materiHtml.innerHTML = artikelHtml;
     materiCss.innerHTML = artikelCss;
+    materiJs.innerHTML = artikelJs;
     for (var i = 1; i < databaseHtml.length; i++) {
       document.getElementById("html" + i).setAttribute("href", domain + databaseHtml[i].data.folder + databaseHtml[i].data.link);
     }
     for (var i = 1; i < databaseCss.length; i++) {
       document.getElementById("css" + i).setAttribute("href", domain + databaseCss[i].data.folder + databaseCss[i].data.link);
+    }
+    for (var i = 1; i < databaseJs.length; i++) {
+      document.getElementById("js" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.link);
     }
   }
 }
@@ -139,8 +147,14 @@ button.onclick = function (myTap) {
   if (target.id === "btn-html") {
     materiHtml.style.display = "block";
     materiCss.style.display = "none";
+    materiJs.style.display = "none";
   } else if (target.id === "btn-css") {
     materiCss.style.display = "block";
     materiHtml.style.display = "none";
+    materiJs.style.display = "none";
+  } else if (target.id === "btn-css") {
+    materiJs.style.display = "block";
+    materiHtml.style.display = "none";
+    materiCss.style.display = "none";
   }
 };
