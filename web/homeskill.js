@@ -31,6 +31,14 @@ let databaseHtml = [
       link: "html3.html",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "html4",
+      artikel: "Struktur Dokumen HTML Dasar",
+      link: "html4.html",
+      folder: "materi/"
+    }
   }
 ];
 
@@ -45,7 +53,7 @@ let databaseCss = [
   {
     data: {
       id: "css1",
-      artikel: "Struktur CSS Dasar",
+      artikel: "Struktur Dasar",
       link: "css1.html",
       folder: "materi/"
     }
@@ -53,7 +61,7 @@ let databaseCss = [
   {
     data: {
       id: "css2",
-      artikel: "Selector CSS",
+      artikel: "Selector Dasar",
       link: "css2.html",
       folder: "materi/"
     }
@@ -63,6 +71,14 @@ let databaseCss = [
       id: "css3",
       artikel: "Property dan Value",
       link: "css3.html",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css4",
+      artikel: "Property Margin CSS",
+      link: "css4.html",
       folder: "materi/"
     }
   }
