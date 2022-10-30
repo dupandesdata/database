@@ -1,18 +1,15 @@
 let domain = "https://dupancode.my.id/";
-
 let databaseHtml = [
   {
     data: {
       id: "html0",
       artikel: "",
-      link: "",
     }
   },
   {
     data: {
       id: "html1",
       artikel: "Apa Itu Internet",
-      link: "html1.html",
       folder: "materi/"
     }
   },
@@ -20,7 +17,6 @@ let databaseHtml = [
     data: {
       id: "html2",
       artikel: "Domain dan DNS Server",
-      link: "html2.html",
       folder: "materi/"
     }
   },
@@ -28,7 +24,6 @@ let databaseHtml = [
     data: {
       id: "html3",
       artikel: "Web Hosting",
-      link: "html3.html",
       folder: "materi/"
     }
   },
@@ -36,8 +31,9 @@ let databaseHtml = [
     data: {
       id: "html4",
       artikel: "Struktur Dokumen HTML Dasar",
-      link: "html4.html",
-      folder: "materi/"
+      folder: "materi/",
+      projectsName: "Dokumen HTML Dasar",
+      projects: "projects/materi-"
     }
   }
 ];
@@ -47,14 +43,12 @@ let databaseCss = [
     data: {
       id: "css0",
       artikel: "",
-      link: "",
     }
   },
   {
     data: {
       id: "css1",
       artikel: "Struktur Dasar",
-      link: "css1.html",
       folder: "materi/"
     }
   },
@@ -62,7 +56,6 @@ let databaseCss = [
     data: {
       id: "css2",
       artikel: "Selector Dasar",
-      link: "css2.html",
       folder: "materi/"
     }
   },
@@ -70,7 +63,6 @@ let databaseCss = [
     data: {
       id: "css3",
       artikel: "Property dan Value",
-      link: "css3.html",
       folder: "materi/"
     }
   },
@@ -78,7 +70,6 @@ let databaseCss = [
     data: {
       id: "css4",
       artikel: "Property Margin CSS",
-      link: "css4.html",
       folder: "materi/"
     }
   }
@@ -89,31 +80,27 @@ let databaseJs = [
     data: {
       id: "js0",
       artikel: "",
-      link: "",
     }
   },
   {
     data: {
-      id: "js1",
+      id: "javascript1",
       artikel: "Sejarah dan Perkembangan JavaScript",
-      link: "javascript1.html",
       folder: "materi/"
     }
   },
   {
     data: {
-      id: "js2",
+      id: "javascript2",
       artikel: "Type data JavaScript",
-      link: "javascript2.html",
       folder: "materi/"
     }
   },
   {
     data: {
-      id: "js3",
+      id: "javascript3",
       artikel: " JavaScript Type Number",
-      link: "javascript3.html",
-      folder: "materi/-"
+      folder: "materi/"
     }
   }
 ];
@@ -126,12 +113,19 @@ let artikelHtml = "";
 let artikelCss = "";
 let artikelJs = "";
 
+// Variabel Projects
+let pHttml = document.getElementById("phtml0");
+let = projectsHtml = "";
+
 // buat artikel
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>" + "<br>";
 };
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
+  if (databaseHtml[i].data.projects === "projects/materi-") {
+    projectsHtml += "<li><a id='p" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a></li>";
+  }
 };
 for (let i = 1; i < databaseJs.length; i++) {
   artikelJs += "<a id='" + databaseJs[i].data.id + "'>" + databaseJs[i].data.artikel + "</a>" + "<br>";
@@ -142,35 +136,24 @@ const body = document.body;
 body.onload = myFunction;
 function myFunction() {
   if (materiHtml !== null && materiCss !== null && materiJs !== null) {
+
     materiHtml.innerHTML = artikelHtml;
     materiCss.innerHTML = artikelCss;
     materiJs.innerHTML = artikelJs;
+
+    pHttml.innerHTML = projectsHtml
+
     for (var i = 1; i < databaseHtml.length; i++) {
-      document.getElementById("html" + i).setAttribute("href", domain + databaseHtml[i].data.folder + databaseHtml[i].data.link);
+      document.getElementById("html" + i).setAttribute("href", domain + databaseHtml[i].data.folder + databaseHtml[i].data.id);
+      if (databaseHtml[i].data.projects === "projects/materi-") {
+        document.getElementById("phtml" + i).setAttribute("href", domain + databaseHtml[i].data.projects + databaseHtml[i].data.id);
+      }
     }
     for (var i = 1; i < databaseCss.length; i++) {
-      document.getElementById("css" + i).setAttribute("href", domain + databaseCss[i].data.folder + databaseCss[i].data.link);
+      document.getElementById("css" + i).setAttribute("href", domain + databaseCss[i].data.folder + databaseCss[i].data.id);
     }
     for (var i = 1; i < databaseJs.length; i++) {
-      document.getElementById("js" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.link);
+      document.getElementById("javascript" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.id);
     }
   }
 }
-const button = document.querySelector("#menu-sidebar");
-button.onclick = function (myTap) {
-  var target = myTap.target;
-  if (target.id === "btn-html") {
-    materiHtml.style.display = "block";
-    materiCss.style.display = "none";
-    materiJs.style.display = "none";
-  } else if (target.id === "btn-css") {
-    materiCss.style.display = "block";
-    materiHtml.style.display = "none";
-    materiJs.style.display = "none";
-  } else if (target.id === "btn-js") {
-    materiJs.style.display = "block";
-    materiHtml.style.display = "none";
-    materiCss.style.display = "none";
-  }
-};
- 
