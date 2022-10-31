@@ -42,6 +42,15 @@ let databaseHtml = [
       artikel: "Jenis Atribut HTML",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "html6",
+      artikel: "Tag Heading ",
+      folder: "materi/",
+      projectsName: "Tag Heading",
+      projects: "projects/materi-"
+    }
   }
 ];
 
