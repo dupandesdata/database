@@ -134,19 +134,38 @@ let pHttml = document.getElementById("phtml0");
 let = projectsHtml = "";
 
 // buat artikel
-for (let i = 1; i < databaseCss.length; i++) {
-  artikelCss += "<a id='" + databaseCss[i].data.id + "'>" + databaseCss[i].data.artikel + "</a>" + "<br>";
-};
 for (let i = 1; i < databaseHtml.length; i++) {
-  artikelHtml += "<a id='" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a>" + "<br>";
+  artikelHtml +=
+    "<li><a id='" +
+    databaseHtml[i].data.id +
+    "'>" +
+    databaseHtml[i].data.artikel +
+    "</a></li>";
   if (databaseHtml[i].data.projects === "projects/materi-") {
-    projectsHtml += "<li><a id='p" + databaseHtml[i].data.id + "'>" + databaseHtml[i].data.artikel + "</a></li>";
+    projectsHtml +=
+      "<li><a id='p" +
+      databaseHtml[i].data.id +
+      "'>" +
+      databaseHtml[i].data.artikel +
+      "</a></li>";
   }
-};
+}
+for (let i = 1; i < databaseCss.length; i++) {
+  artikelCss +=
+    "<li><a id='" +
+    databaseCss[i].data.id +
+    "'>" +
+    databaseCss[i].data.artikel +
+    "</a></li>";
+}
 for (let i = 1; i < databaseJs.length; i++) {
-  artikelJs += "<a id='" + databaseJs[i].data.id + "'>" + databaseJs[i].data.artikel + "</a>" + "<br>";
-};
-
+  artikelJs +=
+    "</li><a id='" +
+    databaseJs[i].data.id +
+    "'>" +
+    databaseJs[i].data.artikel +
+    "</a></li>";
+}
 // buat link artikel
 const body = document.body;
 body.onload = myFunction;
