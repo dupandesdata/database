@@ -35,6 +35,13 @@ let databaseHtml = [
       projectsName: "Dokumen HTML Dasar",
       projects: "projects/materi-"
     }
+  },
+  {
+    data: {
+      id: "html5",
+      artikel: "Jenis Atribut HTML",
+      folder: "materi/"
+    }
   }
 ];
 
