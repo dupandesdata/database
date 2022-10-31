@@ -141,7 +141,7 @@ function myFunction() {
   } else if (materiCss === null && materiCss === null && materiJs !== null) {
     materiJs.innerHTML = artikelJs;
     for (var i = 1; i < databaseJs.length; i++) {
-      document.getElementById("js" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.id);
+      document.getElementById("javascript" + i).setAttribute("href", domain + databaseJs[i].data.folder + databaseJs[i].data.id);
     }
   }
 }
