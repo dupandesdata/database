@@ -11,13 +11,13 @@
   display: block;
   padding: 5px;
   margin-top: 20px;
-  width: 570px;
+  width: 220px;
   height: 150px;
   overflow: auto;
   margin-right: 10px;
 }
 .data-post {
-  width: 80%;
+  width: 60%;
   margin: 0 32px;
 }
 .data-post p {
