@@ -16,10 +16,6 @@
   overflow: auto;
   margin-right: 10px;
 }
-.data-post {
-  width: 60%;
-  margin: 0 32px;
-}
 .data-post p {
   margin-left: 3px;
 }
@@ -51,8 +47,12 @@ blockquote p:first-child {
 /* Desktop Version */
 @media only screen and (min-width: 900px) {
 blockquote {
-  width: 600px
+  width: 600px;
   }
+.data-post {
+  width: 60%;
+  margin: 0 32px;
+}
 }
 
 /* Mobile Version */
