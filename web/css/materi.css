@@ -1,6 +1,5 @@
 .materi {
   display: flex;
-  padding: 30px
 }
 .materi p {
   font-family: arial;
@@ -49,6 +48,9 @@ blockquote p:first-child {
 blockquote {
   width: 600px;
   }
+.materi {
+ padding: 30px; 
+ }
 .data-post {
   width: 60%;
   margin: 0 32px;
