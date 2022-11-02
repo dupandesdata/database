@@ -86,9 +86,10 @@ button {
 }
 @media only screen and (min-width: 900px) {
 .container {
-  padding: 0px 155px;
+  padding: 0px 144px;
 }
 .myContent {
+    margin-right: 38px;
   width: 80%;
 } 
 .sidebar {
