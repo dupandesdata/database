@@ -108,13 +108,20 @@ let databaseJs = [
   {
     data: {
       id: "javascript2",
-      artikel: "Type data JavaScript",
+      artikel: "Struktur Dasar JavaScript",
       folder: "materi/"
     }
   },
   {
     data: {
       id: "javascript3",
+      artikel: "Type data JavaScript",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "javascript4",
       artikel: " JavaScript Type Number",
       folder: "materi/"
     }
