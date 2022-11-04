@@ -18,24 +18,6 @@
 .data-post p {
   margin-left: 3px;
 }
-blockquote {
-  background: #343434;
-  color: #fff;
-  margin: 20px 10px;
-  padding: 2px;
-}
-blockquote p:not(:first-child) {
-  margin: 2px;
-  font-size: 9pt;
-  font-family: monospace;
-}
-blockquote p:first-child {
-  background: rgb(55, 24, 230);
-  margin: -2px;
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-}
-
         dl,ol,ul{margin-left:20px}
         ol{list-style:decimal outside}
         ul{list-style:square outside}
@@ -45,7 +27,7 @@ blockquote p:first-child {
 
 /* Desktop Version */
 @media only screen and (min-width: 900px) {
-blockquote {
+code {
   width: 600px;
   }
 .materi {
@@ -62,4 +44,98 @@ blockquote {
   .menu-post {
     display: none;
   }
+}
+code {
+  display: block;
+  width: 302px;
+  color: #000;
+}
+code p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 0 0 0 5px;
+}
+code p:first-child {
+  background: rgb(55, 24, 230);
+  padding: 5px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 11pt;
+  font-family: 'Inter', sans-serif;
+}
+code p:not(:first-child) {
+  border-bottom: 0.3px solid #d1d1d1;
+  
+}
+code p:nth-child(2) {
+  background: #d9d8d7;
+}
+code p:nth-child(3) {
+  background: #ededed;
+}
+code p:nth-child(4) {
+  background: #d9d8d7;
+}
+code p:nth-child(5) {
+  background: #ededed;
+}
+code p:nth-child(6) {
+  background: #d9d8d7;
+}
+code p:nth-child(7) {
+  background: #ededed;
+}
+code p:nth-child(8) {
+  background: #d9d8d7;
+}
+code p:nth-child(9) {
+  background: #ededed;
+}
+code p:nth-child(10) {
+  background: #d9d8d7;
+}
+code p:nth-child(11) {
+  background: #ededed;
+}
+code p:nth-child(12) {
+  background: #d9d8d7;
+}
+code p:nth-child(13) {
+  background: #ededed;
+}
+code p:nth-child(14) {
+  background: #d9d8d7;
+}
+code p:nth-child(15) {
+  background: #ededed;
+}
+code p:nth-child(16) {
+  background: #ededed;
+}
+code p:nth-child(17) {
+  background: #ededed;
+}
+code p:nth-child(18) {
+  background: #d9d8d7;
+}
+code p:nth-child(19) {
+  background: #ededed;
+}
+code p:nth-child(20) {
+  background: #d9d8d7;
+}
+code p:nth-child(21) {
+  background: #ededed;
+}
+code p:nth-child(22) {
+  background: #d9d8d7;
+}
+code p:nth-child(23) {
+  background: #ededed;
+}
+code p:nth-child(24) {
+  background: #d9d8d7;
+}
+code p:nth-child(25) {
+  background: #ededed;
 }
