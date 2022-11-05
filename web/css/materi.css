@@ -120,8 +120,9 @@ ol li {
 }
 .url-out {
   font-size: 9pt;
-  padding: 1px;
-  border: 1px solid #eaeaea;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #b9b7b7;
 }
 .fa-house,
 .fa-rotate-right {
