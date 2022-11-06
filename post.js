@@ -172,4 +172,4 @@ function myFunction() {
 
 
 // Box Output 
- document.querySelector(".window").innerHTML = '<div class="tab">Output</div><div class="window"><i class="fa-solid fa-house"></i><i class="fa-solid fa-rotate-right"></i><span class="url-out">localhost:8080/dupancode</span></div>';
+ document.querySelectorAll(".window").innerHTML = '<div class="tab">Output</div><div class="window"><i class="fa-solid fa-house"></i><i class="fa-solid fa-rotate-right"></i><span class="url-out">localhost:8080/dupancode</span></div>';
