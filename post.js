@@ -46,10 +46,15 @@ let databaseHtml = [
   {
     data: {
       id: "html6",
+      artikel: "Container Dasar ",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html7",
       artikel: "Tag Heading ",
       folder: "materi/",
-      projectsName: "Tag Heading",
-      projects: "projects/materi-"
     }
   }
 ];
