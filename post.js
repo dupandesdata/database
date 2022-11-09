@@ -56,6 +56,13 @@ let databaseHtml = [
       artikel: "Tag Heading ",
       folder: "materi/",
     }
+  },
+  {
+    data: {
+      id: "html8",
+      artikel: "Membuat Teks ",
+      folder: "materi/",
+    }
   }
 ];
 
