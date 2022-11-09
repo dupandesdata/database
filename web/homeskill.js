@@ -47,16 +47,21 @@ let databaseHtml = [
     data: {
       id: "html6",
       artikel: "Container Dasar ",
-      folder: "materi/",
-      projects: "projects/materi-"
+      folder: "materi/"
     }
   },
   {
     data: {
       id: "html7",
       artikel: "Tag Heading ",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "html8",
+      artikel: "Membuat Teks",
       folder: "materi/",
-      projects: "projects/materi-"
     }
   }
 ];
