@@ -77,6 +77,20 @@ let databaseHtml = [
       artikel: "Tag List Item ",
       folder: "materi/",
     }
+  },
+  {
+    data: {
+      id: "html11",
+      artikel: "Tag img",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html12",
+      artikel: "Tag Tabel",
+      folder: "materi/",
+    }
   }
 ];
 
