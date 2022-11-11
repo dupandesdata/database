@@ -60,7 +60,7 @@ let databaseHtml = [
   {
     data: {
       id: "html8",
-      artikel: "Format Teks ",
+      artikel: "Tag Formating Teks ",
       folder: "materi/",
     }
   },
@@ -74,7 +74,21 @@ let databaseHtml = [
   {
     data: {
       id: "html10",
-      artikel: "Tag List Item ",
+      artikel: "Tag List Item",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html11",
+      artikel: "Tag img",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html12",
+      artikel: "Tag Tabel",
       folder: "materi/",
     }
   }
