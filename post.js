@@ -46,49 +46,56 @@ let databaseHtml = [
   {
     data: {
       id: "html6",
-      artikel: "Container Dasar ",
+      artikel: "Element Container Dasar",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html7",
-      artikel: "Tag Heading ",
+      artikel: "Element Heading",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html8",
-      artikel: "Tag Formating Teks ",
+      artikel: "Element Formating Teks",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html9",
-      artikel: "Tag Link ",
+      artikel: "Element Link",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html10",
-      artikel: "Tag List Item",
+      artikel: "Element List Item",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html11",
-      artikel: "Tag img",
+      artikel: "Element img",
       folder: "materi/",
     }
   },
   {
     data: {
       id: "html12",
-      artikel: "Tag Tabel",
+      artikel: "Element Tabel",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html13",
+      artikel: "Element Input",
       folder: "materi/",
     }
   }
