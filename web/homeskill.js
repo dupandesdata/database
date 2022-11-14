@@ -176,10 +176,6 @@ let artikelHtml = "";
 let artikelCss = "";
 let artikelJs = "";
 
-// Variabel Projects
-let pHttml = document.getElementById("phtml0");
-let = projectsHtml = "";
-
 // buat artikel
 for (let i = 1; i < databaseHtml.length; i++) {
   artikelHtml +=
@@ -188,14 +184,6 @@ for (let i = 1; i < databaseHtml.length; i++) {
     "'>" +
     databaseHtml[i].data.artikel +
     "</a></li>";
-  if (databaseHtml[i].data.projects === "projects/materi-") {
-    projectsHtml +=
-      "<li><a id='p" +
-      databaseHtml[i].data.id +
-      "'>" +
-      databaseHtml[i].data.artikel +
-      "</a></li>";
-  }
 }
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss +=
@@ -223,13 +211,8 @@ function myFunction() {
     materiCss.innerHTML = artikelCss;
     materiJs.innerHTML = artikelJs;
 
-    pHttml.innerHTML = projectsHtml
-
     for (var i = 1; i < databaseHtml.length; i++) {
       document.getElementById("html" + i).setAttribute("href", domain + databaseHtml[i].data.folder + databaseHtml[i].data.id);
-      if (databaseHtml[i].data.projects === "projects/materi-") {
-        document.getElementById("phtml" + i).setAttribute("href", domain + databaseHtml[i].data.projects + databaseHtml[i].data.id);
-      }
     }
     for (var i = 1; i < databaseCss.length; i++) {
       document.getElementById("css" + i).setAttribute("href", domain + databaseCss[i].data.folder + databaseCss[i].data.id);
