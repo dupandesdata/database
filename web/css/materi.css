@@ -70,6 +70,18 @@ ol li {
   padding: 0 0 5px;
 }
 
+    .syntax {
+      width: 50%;
+    }
+    .syntax p {
+      background: #fff !important;
+      border-left: 3px solid #000 !important;
+      color: #000 !important;
+      border-bottom: none !important;
+      padding: 0 4px !important;
+      font-family: monospace !important;
+    }
+
 /* Desktop Version */
 @media only screen and (min-width: 900px) {
   article {
