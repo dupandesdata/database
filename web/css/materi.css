@@ -81,6 +81,9 @@ ol li {
       padding: 0 4px !important;
       font-family: monospace !important;
     }
+iframe {
+	border: none
+}
 
 /* Desktop Version */
 @media only screen and (min-width: 900px) {
