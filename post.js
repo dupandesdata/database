@@ -32,15 +32,13 @@ let databaseHtml = [
       id: "html4",
       artikel: "Struktur Dokumen HTML Dasar",
       folder: "materi/",
-      projectsName: "Dokumen HTML Dasar",
-      projects: "projects/materi-"
     }
   },
   {
     data: {
       id: "html5",
       artikel: "Jenis Atribut HTML",
-      folder: "materi/"
+      folder: "materi/",
     }
   },
   {
@@ -96,6 +94,13 @@ let databaseHtml = [
     data: {
       id: "html13",
       artikel: "Element Input",
+      folder: "materi/",
+    }
+  },
+  {
+    data: {
+      id: "html14",
+      artikel: "Element Form",
       folder: "materi/",
     }
   }
