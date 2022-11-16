@@ -1,0 +1,32 @@
+main {
+  padding: 0 50px;
+}
+.project-post {
+  display: flex;
+  height: 100vh;
+}
+.info {
+  width: 250px;
+  padding-top: 7px;
+}
+.info h3 {
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  background: blue;
+}
+ol {
+  margin-left: 20px;
+  padding-top: 3px;
+}
+a {
+  text-decoration: none;
+}
+iframe {
+  border: none;
+}
+@media only screen and (max-width: 700px) {
+  .project-post {
+    flex-direction: column;
+  }
+}
