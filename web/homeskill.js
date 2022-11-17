@@ -137,14 +137,14 @@ let databaseCss = [
   {
     data: {
       id: "css3",
-      artikel: "Property dan Value",
+      artikel: "Box Model",
       folder: "materi/"
     }
   },
   {
     data: {
       id: "css4",
-      artikel: "Property Margin CSS",
+      artikel: "Properti Display Default",
       folder: "materi/"
     }
   }
@@ -194,6 +194,9 @@ let materiJs = document.getElementById("js0");
 let artikelHtml = "";
 let artikelCss = "";
 let artikelJs = "";
+let jmHtml = "";
+let jmCss = "";
+let jmJs = "";
 
 // buat artikel
 for (let i = 1; i < databaseHtml.length; i++) {
@@ -203,6 +206,7 @@ for (let i = 1; i < databaseHtml.length; i++) {
     "'>" +
     databaseHtml[i].data.artikel +
     "</a></li>";
+    jmHtml++;
 }
 for (let i = 1; i < databaseCss.length; i++) {
   artikelCss +=
@@ -211,6 +215,7 @@ for (let i = 1; i < databaseCss.length; i++) {
     "'>" +
     databaseCss[i].data.artikel +
     "</a></li>";
+    jmCss++;
 }
 for (let i = 1; i < databaseJs.length; i++) {
   artikelJs +=
@@ -219,7 +224,12 @@ for (let i = 1; i < databaseJs.length; i++) {
     "'>" +
     databaseJs[i].data.artikel +
     "</a></li>";
+    jmJs++;
 }
+// jumlah materi 
+document.getElementById("jmhtml").innerHTML = "materi " + jmHtml;
+document.getElementById("jmcss").innerHTML = "materi " + jmCss;
+document.getElementById("jmjs").innerHTML = "materi " + jmJs;
 // buat link artikel
 const body = document.body;
 body.onload = myFunction;
