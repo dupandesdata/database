@@ -137,14 +137,14 @@ let databaseCss = [
   {
     data: {
       id: "css3",
-      artikel: "Property dan Value",
+      artikel: "Box Model",
       folder: "materi/"
     }
   },
   {
     data: {
       id: "css4",
-      artikel: "Property Margin CSS",
+      artikel: "Properti Display Default",
       folder: "materi/"
     }
   }
