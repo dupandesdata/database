@@ -70,19 +70,55 @@ ol li {
   padding: 0 0 5px;
 }
 
-    .syntax {
-      width: 50%;
-    }
-    .syntax p {
-      background: #fff !important;
-      border-left: 3px solid #000 !important;
-      color: #000 !important;
-      border-bottom: none !important;
-      padding: 0 4px !important;
-      font-family: monospace !important;
-    }
+.syntax {
+  width: 50%;
+}
+.syntax p {
+  background: #fff !important;
+  border-left: 3px solid #000 !important;
+  color: #000 !important;
+  border-bottom: none !important;
+  padding: 0 4px !important;
+  font-family: monospace !important;
+}
 iframe {
-	border: none
+  border: none;
+}
+table {
+  --accent-color: #362f4b;
+  --text-color: slategray;
+  --bgColorDarker: #ececec;
+  --bgColorLighter: #fcfcfc;
+  --insideBorderColor: rgb(194, 189, 189);
+  width: 100%;
+  border: 1px solid var(--accent-color);
+  border-collapse: collapse;
+  color: var(--text-color);
+  table-layout: fixed;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+table thead tr {
+  color: whitesmoke;
+  background-color: var(--accent-color);
+  font-size: 1rem;
+}
+table tbody tr {
+  border: 1px solid var(--insideBorderColor);
+  background-color: var(--bgColorDarker);
+}
+table th {
+  letter-spacing: 0.075rem;
+  padding: 5px;
+}
+table td {
+  padding: 0.75rem 1rem;
+  font-weight: normal;
+  text-align: left;
+  border-right: 1px solid var(--insideBorderColor);
+}
+table th:nth-child(4),
+table td:nth-child(4) {
+  text-align: right;
 }
 
 /* Desktop Version */
@@ -115,115 +151,20 @@ iframe {
     max-height: 190px;
     overflow: auto;
   }
+  table thead {
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  tr,
+  td {
+    width: 100%;
+  }
+  table td:not(:last-child) {
+    border-bottom: 1px solid var(--insideBorderColor);
+  }
 }
-
-body {
-	margin: 1rem;
-}
-
-table {
-	--accent-color: #362f4b;
-	--text-color: slategray;
-	--bgColorDarker: #ececec;
-	--bgColorLighter: #fcfcfc;
-	--insideBorderColor: lightgray;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	border: 1px solid var(--accent-color);
-	border-collapse: collapse;
-	color: var(--text-color);
-	table-layout: fixed;
-}
-
-table caption {
-	margin: 1rem 0;
-	color: slategray;
-	font-size: 1.5rem;
-	font-weight: 600;
-	letter-spacing: 0.055rem;
-	text-align: center;
-}
-
-table thead tr {
-	color: whitesmoke;
-	background-color: var(--accent-color);
-	font-size: 1rem;
-}
-
-table tbody tr {
-	border: 1px solid var(--insideBorderColor);
-	background-color: var(--bgColorDarker);
-}
-
-table tbody tr:nth-child(odd) {
-	background-color: var(--bgColorLighter);
-}
-
-table th {
-	letter-spacing: 0.075rem;
-}
-
-table th,
-table td {
-	padding: 0.75rem 1rem;
-	font-weight: normal;
-	text-align: left;
-}
-
-table th:nth-child(4),
-table td:nth-child(4) {
-	text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-	table {
-		border: none;
-	}
-
-	table caption {
-		padding: 0.75rem 1rem;
-		border-radius: 6px 6px 0 0;
-		color: whitesmoke;
-		font-size: 1.35rem;
-		background-color: var(--accent-color);
-	}
-
-	table thead {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		clip: rect(0 0 0 0);
-		overflow: hidden;
-	}
-
-	table tbody tr {
-		margin-bottom: 2rem;
-		display: block;
-	}
-
-	table td {
-		font-size: 0.875rem;
-		text-align: right;
-		display: block;
-	}
-
-	table td:before {
-		content: attr(data-label);
-		font-size: 0.75rem;
-		font-weight: 600;
-		letter-spacing: 0.075rem;
-		text-transform: uppercase;
-		float: left;
-		opacity: 0.5;
-	}
-
-	table td:not(:last-child) {
-		border-bottom: 1px solid var(--insideBorderColor);
-	}
-}
-
-
 .output {
   border: 1px solid blue;
   width: 302px;
@@ -243,9 +184,9 @@ table td:nth-child(4) {
 }
 .url-out {
   font-size: 9pt;
-    padding: 3px;
-    border-radius: 5px;
-    border: 1px solid #b9b7b7;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #b9b7b7;
 }
 .fa-house,
 .fa-rotate-right {
@@ -266,14 +207,7 @@ code::-webkit-scrollbar {
 }
 code::-webkit-scrollbar-thumb {
   background-color: #0ae;
-  background-image: -webkit-gradient(
-    linear,
-    0 0,
-    0 100%,
-    color-stop(0.5, rgba(255, 255, 255, 0.2)),
-    color-stop(0.5, transparent),
-    to(transparent)
-  );
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent));
   border-radius: 5px;
 }
 code p {
