@@ -2,13 +2,14 @@
 
 /* CSS Reset */
 * {
-  font-family: "Inter", sans-serif;
+  font-family: ui-serif,Georgia,Cambria,times new roman,Times,serif;
+    letter-spacing: .0125rem;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background: #f5fbfd;
+  background: #f8fafc;
 }
 h1,
 h2,
