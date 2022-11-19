@@ -147,6 +147,13 @@ let databaseCss = [
       artikel: "Properti Display Default",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css5",
+      artikel: "Background Color",
+      folder: "materi/"
+    }
   }
 ];
 
