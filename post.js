@@ -154,6 +154,20 @@ let databaseCss = [
       artikel: "Background Color",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css6",
+      artikel: "Font Properti",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css7",
+      artikel: "Border Properti",
+      folder: "materi/"
+    }
   }
 ];
 
