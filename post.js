@@ -165,6 +165,13 @@ let databaseCss = [
   {
     data: {
       id: "css7",
+      artikel: "Typography",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css8",
       artikel: "Border Properti",
       folder: "materi/"
     }
