@@ -175,6 +175,13 @@ let databaseCss = [
       artikel: "Border Properti",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css8",
+      artikel: "Height dan Width",
+      folder: "materi/"
+    }
   }
 ];
 
