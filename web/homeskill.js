@@ -262,9 +262,9 @@ for (let i = 1; i < databaseJs.length; i++) {
     jmJs++;
 }
 // jumlah materi 
-document.getElementById("jmhtml").innerHTML = "materi " + jmHtml;
-document.getElementById("jmcss").innerHTML = "materi " + jmCss;
-document.getElementById("jmjs").innerHTML = "materi " + jmJs;
+document.getElementById("jmhtml").innerHTML = jmHtml + " Artikel";
+document.getElementById("jmcss").innerHTML = jmCss + " Artikel";
+document.getElementById("jmjs").innerHTML = jmJs + " Artikel";
 // buat link artikel
 const body = document.body;
 body.onload = myFunction;
