@@ -178,8 +178,15 @@ let databaseCss = [
   },
   {
     data: {
-      id: "css8",
+      id: "css9",
       artikel: "Height dan Width",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css10",
+      artikel: "Text Alignment",
       folder: "materi/"
     }
   }
