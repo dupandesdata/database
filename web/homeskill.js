@@ -189,6 +189,13 @@ let databaseCss = [
       artikel: "Text Alignment",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css11",
+      artikel: "Text Decoration",
+      folder: "materi/"
+    }
   }
 ];
 
