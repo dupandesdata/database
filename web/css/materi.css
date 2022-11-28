@@ -121,6 +121,24 @@ table th:nth-child(4),
 table td:nth-child(4) {
   text-align: right;
 }
+          @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+          blockquote {
+            width: 50%;
+            background-color: rgb(240, 227, 109);
+            margin: 8px 10px;
+            padding: 0 4px 6px;
+            color: rgb(0, 0, 0);
+            padding-top: 2px;
+          }
+
+          blockquote span:nth-child(2) {
+            font-family: "Lato", sans-serif;
+            font-size: 30px;
+            border-bottom: 1px solid #000;
+          }
+          #quote {
+            font-size: 30px;
+          }
 
 /* Desktop Version */
 @media only screen and (min-width: 900px) {
