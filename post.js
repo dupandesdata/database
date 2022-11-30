@@ -196,6 +196,20 @@ let databaseCss = [
       artikel: "Text Decoration",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css12",
+      artikel: "Text Transformation",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css13",
+      artikel: "CSS Style Link",
+      folder: "materi/"
+    }
   }
 ];
 
