@@ -217,6 +217,27 @@ let databaseCss = [
       artikel: "CSS Style List",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css15",
+      artikel: "CSS Style Table",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css16",
+      artikel: "CSS Position",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css17",
+      artikel: "Z-index",
+      folder: "materi/"
+    }
   }
 ];
 
