@@ -164,7 +164,6 @@ blockquote > span:nth-child(2) {
 }
 code {
   display: block;
-  color: #000;
   margin: 20px 0;
   background: #1d1919;
   border: 1px solid #ddd;
@@ -185,6 +184,10 @@ code p {
   margin-top: 0 !important;
   padding: 0 0 0 5px;
   color: #e7e5e5;
+}
+code div {
+  background: #282c34;
+    color: #bdbdbd;
 }
 code > p:first-child {
   margin-bottom: 2px;
