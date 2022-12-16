@@ -238,6 +238,20 @@ let databaseCss = [
       artikel: "Z-index",
       folder: "materi/"
     }
+  },
+  {
+    data: {
+      id: "css18",
+      artikel: "Overflow",
+      folder: "materi/"
+    }
+  },
+  {
+    data: {
+      id: "css19",
+      artikel: "Float",
+      folder: "materi/"
+    }
   }
 ];
 
